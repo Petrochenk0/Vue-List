@@ -82,6 +82,7 @@ export default{
     }
     .mainApp{
         padding: 20px;
+        color:black;
     }
 
     .input{
