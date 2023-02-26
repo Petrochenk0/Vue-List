@@ -1,6 +1,5 @@
 <template>
     <div class="mainApp">
-    
         <!-- <post-form/>
         <post-list :posts="posts"/> -->
                 
@@ -24,7 +23,7 @@
             >
 
             <button class="submit" @click="addPost">Добавить пост</button>
-
+            <button class="submit" @click="deletePost">Удалить пост </button>
             </form>
 
             <div class="post" v-for="post in posts">
@@ -46,6 +45,7 @@ export default{
         return{
 
 
+            
             posts: [
                 {id: 1, title: 'Статья о JavaScript', body: 'Сам JavaScript'},
                 {id: 2, title: 'Статья о JavaScript', body: 'Сам JavaScript'},
@@ -67,10 +67,24 @@ export default{
             this.posts.push(newPost);
             this.title = "";
             this.body = "";
+        },
+        deletePost(index){
+            // if(input==""){
+            //     alert("Введите текст для удаления");
+            // }else{
+            //     confirm("Вы уверены что хотите удалить этот пост?");
+            //     if(confirm){
+            //         this.posts.splice(index, 1);
+            //     }
+            // }
+
+            this.posts.splice(index, 1);
+
+        }
+            
         }
         
     }
-}
 </script>
 
 <style>
@@ -82,7 +96,6 @@ export default{
     }
     .mainApp{
         padding: 20px;
-        color:black;
     }
 
     .input{
