@@ -72,6 +72,7 @@ export default{
             this.body = "";
         },
         deletePost(index){
+        
             // if(input==""){
             //     alert("Введите текст для удаления");
             // }else{
