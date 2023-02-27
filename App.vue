@@ -47,7 +47,6 @@ export default{
     data(){
         return{
 
-
             posts: [
                 {id: 1, title: 'Статья о JavaScript', body: 'Сам JavaScript'},
                 {id: 2, title: 'Статья о JavaScript', body: 'Сам JavaScript'},
