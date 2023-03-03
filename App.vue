@@ -1,11 +1,9 @@
 <template>
-
     <div class="mainApp">
-    
         <!-- <post-form/>
         <post-list :posts="posts"/> -->
                 
-            <form @submit.prevent>
+        <form @submit.prevent>
             <h4>Назначение постов</h4>
 
             <input
@@ -28,27 +26,27 @@
             <button class="submit" @click="deletePost">Удалить пост </button>
             </form>
 
+
+
             <div class="post" v-for="post in posts">
                 <div><strong>Название: </strong> {{ post.title }}</div>
                 <div><strong>Описание: </strong>{{ post.body }}</div>
             </div>
 
+
+
     </div>
-    
 </template>
 
 <script>
-
-// import PostForm from '@/components/PostForm.vue';
-// import PostList from '@/components/PostList.vue';
-
+import form from './components/form.vue';
+import list from './components/list.vue';
 export default{
-    // components:{
-    //   PostForm, PostList 
-    // },
+    components:{
+      form, list 
+    },
     data(){
-        return{
-
+        return{          
             posts: [
                 {id: 1, title: 'Статья о JavaScript', body: 'Сам JavaScript'},
                 {id: 2, title: 'Статья о JavaScript', body: 'Сам JavaScript'},
@@ -72,7 +70,6 @@ export default{
             this.body = "";
         },
         deletePost(index){
-        
             // if(input==""){
             //     alert("Введите текст для удаления");
             // }else{
@@ -89,7 +86,6 @@ export default{
         }
         
     }
-    
 </script>
 
 <style>
@@ -102,7 +98,6 @@ export default{
     .mainApp{
         padding: 20px;
     }
-
     .input{
         width: 100%;
         padding: 0.5em;
@@ -123,8 +118,6 @@ export default{
         background-color: #3bb914;
         color: white;
     }
-
-
     .post{
         display: flex;
         flex-direction: column;
@@ -135,5 +128,4 @@ export default{
         padding: 1em;
         margin-top: 20px;
     }
-    
 </style>
