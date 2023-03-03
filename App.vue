@@ -39,12 +39,12 @@
 </template>
 
 <script>
-import form from './components/form.vue';
-import list from './components/list.vue';
+// import form from './components/form.vue';
+// import list from './components/list.vue';
 export default{
-    components:{
-      form, list 
-    },
+    // components:{
+    //   form, list 
+    // },
     data(){
         return{          
             posts: [
