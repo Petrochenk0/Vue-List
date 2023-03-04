@@ -2,7 +2,6 @@
     <div class="mainApp">
         <!-- <post-form/>
         <post-list :posts="posts"/> -->
-        
                 
         <form @submit.prevent>
             <h4>Назначение постов</h4>
