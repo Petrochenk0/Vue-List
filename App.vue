@@ -1,6 +1,5 @@
 <template>
     <div class="mainApp">
-     
     
         <!-- <post-form/>
         <post-list :posts="posts"/> -->
