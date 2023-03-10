@@ -45,6 +45,7 @@ export default{
     // components:{
     //   form, list 
     // },
+    
     data(){
         return{          
             posts: [
