@@ -58,6 +58,7 @@ export default{
             body: ""
         }
     },
+    
     methods:{
         addPost(event){
             let newPost = {
